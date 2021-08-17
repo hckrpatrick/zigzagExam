@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@hckrpatrick 
-pragmatic-reviews
-/
-react-pages
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-react-pages/.github/workflows/workflow.yml
-@pragmatic-reviews
-pragmatic-reviews Initial commit
-Latest commit 254f4c7 on Apr 12
- History
- 1 contributor
-46 lines (21 sloc)  584 Bytes
-  
 name: Github Pages Deploy
 
 on:
