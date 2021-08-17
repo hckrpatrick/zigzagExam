@@ -1,24 +1,27 @@
-name: Zigzag Exam
+name: Github Pages Deploy
+
 on:
   push:
     branches:
-      - main
+      - "main"
+
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [14.x]
+    
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install Packages
-      run: npm install
-    - name: Deploy to GH Pages
-      run: |
-        git config --global user.email ${{secrets.EMAIL}}
-        git config --global user.name ${{secrets.USERNAME}}
-        npm run deploy
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install and build
+        run: npm install && npm run build
+      
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.        
