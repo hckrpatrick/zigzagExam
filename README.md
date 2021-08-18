@@ -2,9 +2,9 @@
 
 This project is deployed on [GitHub Pages](https://hckrpatrick.github.io/zigzagExam/) ([https://hckrpatrick.github.io/zigzagExam/](https://hckrpatrick.github.io/zigzagExam/)) and has the following components:
 
-[Level 1](#level-1) - Checks if the input string is a palindrome\
-[Level 2](#level-2) - Returns the longest palindromic substring of the input string\
-[Level 3](#level-3) - Returns the minimum number of cuts needed to perform on the input string such
+[Level 1](#level-1) - Displays if the input string is a palindrome\
+[Level 2](#level-2) - Displays the longest palindromic substring of the input string\
+[Level 3](#level-3) - Displays the minimum number of cuts needed to perform on the input string such
 that each remaining substring is a palindrome
 
 ## Level 1
@@ -22,9 +22,9 @@ Time Complexity: O(n) where n is the length of the input
 ## Level 2
 This component has a function longestPalindrome(input) which takes in an input and returns the longest palindromic substring of the input.
 
-1. Initially the function creates a variable longestPalindrome and a nxn array, where n is the length of the input string.
+1. Initially the function creates a variable longPalindromeSubstr and a nxn array, where n is the length of the input string.
       - Initial values of all the cells in the array is false
-      - Initial value of longestPalindrome is the first letter of the input string
+      - Initial value of longPalindromeSubstr is the first letter of the input string
       - The value of array[i][j] should be true if the substring of the input string from index i to j is a palindrome, otherwise false
       - Only the upper right triangle of the 2 dimensional array will be used since the start index of the substring cannot be greater than the end index.
 2. Assigning values to the array:
@@ -39,13 +39,20 @@ This component has a function longestPalindrome(input) which takes in an input a
            - For array[i][j] where (j - i) >= 2 and j < n, the value will be set to true if array[i+1][j-1] is true and input[i] == input[j], otherwise false
            - The function will start to assign values for substring with length 3 to n
            - Time Complexity: O((n - 2) + (n - 3) + ... + (n - (n - 2)) + (n - (n - 1))) = O((n - 2) + (n - 3) + ... + 2 + 1) = O(n(n - 1)/2) = O(n<sup>2</sup>)
-      - Every time a cell is set to true, it checks if the substring it represents is longer than the length of the longestPalindrome, if yes then the longestPalindrome will take the value of the substring
+      - Every time a cell is set to true, it checks if the substring it represents is longer than the length of the longPalindromeSubstr, if yes then the it will take the value of the substring
+3. The function returns the longPalindromeSubstr.
 
 Total Time Complexity: O(n) + O(n) + O(n<sup>2</sup>) = O(n<sup>2</sup>) where n is the length of the input
          
 
 ## Level 3
-This component has a function longestPalindrome(input) which takes in an input and returns the longest palindromic substring of the input.
+This component has a function minPalindromeCuts(input) which takes in an input and returns the minimum number of cuts needed to perform on the input string such
+that each remaining substring is a palindrome.
+
+1. Initially the function creates an array with size n and a nxn array, where n is the length of the input string. The values of the cells are assigned the same way longestPalindrome does.
+2. 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
