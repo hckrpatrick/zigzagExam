@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/zigzagExam/static/css/main.a617e044.chunk.css",
-    "main.js": "/zigzagExam/static/js/main.84e914bb.chunk.js",
-    "main.js.map": "/zigzagExam/static/js/main.84e914bb.chunk.js.map",
+    "main.css": "/zigzagExam/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/zigzagExam/static/js/main.2194f802.chunk.js",
+    "main.js.map": "/zigzagExam/static/js/main.2194f802.chunk.js.map",
     "runtime-main.js": "/zigzagExam/static/js/runtime-main.009104a8.js",
     "runtime-main.js.map": "/zigzagExam/static/js/runtime-main.009104a8.js.map",
-    "static/js/2.980460e0.chunk.js": "/zigzagExam/static/js/2.980460e0.chunk.js",
-    "static/js/2.980460e0.chunk.js.map": "/zigzagExam/static/js/2.980460e0.chunk.js.map",
+    "static/js/2.c662a3a3.chunk.js": "/zigzagExam/static/js/2.c662a3a3.chunk.js",
+    "static/js/2.c662a3a3.chunk.js.map": "/zigzagExam/static/js/2.c662a3a3.chunk.js.map",
     "static/js/3.5c4d33c9.chunk.js": "/zigzagExam/static/js/3.5c4d33c9.chunk.js",
     "static/js/3.5c4d33c9.chunk.js.map": "/zigzagExam/static/js/3.5c4d33c9.chunk.js.map",
     "index.html": "/zigzagExam/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/zigzagExam/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.980460e0.chunk.js.LICENSE.txt": "/zigzagExam/static/js/2.980460e0.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/zigzagExam/static/media/logo.6ce24c58.svg"
+    "static/css/main.6dea0f05.chunk.css.map": "/zigzagExam/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.c662a3a3.chunk.js.LICENSE.txt": "/zigzagExam/static/js/2.c662a3a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.009104a8.js",
-    "static/js/2.980460e0.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.84e914bb.chunk.js"
+    "static/js/2.c662a3a3.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.2194f802.chunk.js"
   ]
 }
