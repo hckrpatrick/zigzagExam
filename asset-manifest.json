@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/zigzagexam/static/css/main.a617e044.chunk.css",
-    "main.js": "/zigzagexam/static/js/main.84e914bb.chunk.js",
-    "main.js.map": "/zigzagexam/static/js/main.84e914bb.chunk.js.map",
-    "runtime-main.js": "/zigzagexam/static/js/runtime-main.8b34c3f4.js",
-    "runtime-main.js.map": "/zigzagexam/static/js/runtime-main.8b34c3f4.js.map",
-    "static/js/2.980460e0.chunk.js": "/zigzagexam/static/js/2.980460e0.chunk.js",
-    "static/js/2.980460e0.chunk.js.map": "/zigzagexam/static/js/2.980460e0.chunk.js.map",
-    "static/js/3.5c4d33c9.chunk.js": "/zigzagexam/static/js/3.5c4d33c9.chunk.js",
-    "static/js/3.5c4d33c9.chunk.js.map": "/zigzagexam/static/js/3.5c4d33c9.chunk.js.map",
-    "index.html": "/zigzagexam/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/zigzagexam/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.980460e0.chunk.js.LICENSE.txt": "/zigzagexam/static/js/2.980460e0.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/zigzagexam/static/media/logo.6ce24c58.svg"
+    "main.css": "/zigzagExam/static/css/main.a617e044.chunk.css",
+    "main.js": "/zigzagExam/static/js/main.84e914bb.chunk.js",
+    "main.js.map": "/zigzagExam/static/js/main.84e914bb.chunk.js.map",
+    "runtime-main.js": "/zigzagExam/static/js/runtime-main.009104a8.js",
+    "runtime-main.js.map": "/zigzagExam/static/js/runtime-main.009104a8.js.map",
+    "static/js/2.980460e0.chunk.js": "/zigzagExam/static/js/2.980460e0.chunk.js",
+    "static/js/2.980460e0.chunk.js.map": "/zigzagExam/static/js/2.980460e0.chunk.js.map",
+    "static/js/3.5c4d33c9.chunk.js": "/zigzagExam/static/js/3.5c4d33c9.chunk.js",
+    "static/js/3.5c4d33c9.chunk.js.map": "/zigzagExam/static/js/3.5c4d33c9.chunk.js.map",
+    "index.html": "/zigzagExam/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/zigzagExam/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.980460e0.chunk.js.LICENSE.txt": "/zigzagExam/static/js/2.980460e0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/zigzagExam/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b34c3f4.js",
+    "static/js/runtime-main.009104a8.js",
     "static/js/2.980460e0.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.84e914bb.chunk.js"
