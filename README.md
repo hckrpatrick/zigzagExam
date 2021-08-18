@@ -12,9 +12,9 @@ This component has a function isPalindrom(input) which takes in an input and ret
 
 1. Initially the function creates a variable start and end with values 0 and length of the input minus 1, respectively.
 2. It will enter a loop and end until the following conditions are met:
-      - start is equal to end: return "True"
-      - start is greater than end: return "True"
-      - input[start] is not equal to input[end]: return "False"
+      - start == end: return "True"
+      - start > end: return "True"
+      - input[start] != input[end]: return "False"
 3. After each iteration on the loop, start will increment and end will decrement.
 
 Time Complexity: O(n) where n is the length of the input
@@ -22,11 +22,30 @@ Time Complexity: O(n) where n is the length of the input
 ## Level 2
 This component has a function longestPalindrome(input) which takes in an input and returns the longest palindromic substring of the input.
 
-1. Initially the function creates a nxn array, where n is the length of the input string.
-      - The value of array[i][j] is true if the substring of the input string from index i to j is a palindrome, otherwise false
-2. sdas
+1. Initially the function creates a variable longestPalindrome and a nxn array, where n is the length of the input string.
+      - Initial values of all the cells in the array is false
+      - Initial value of longestPalindrome is the first letter of the input string
+      - The value of array[i][j] should be true if the substring of the input string from index i to j is a palindrome, otherwise false
+      - Only the upper right triangle of the 2 dimensional array will be used since the start index of the substring cannot be greater than the end index.
+2. Assigning values to the array:
+      - let n be equal to the length of the input string
+      - substring length = 1:
+           - For array[i][i] where i is from 0 to the n - 1, the value will be set to true since all strings with length 1 is a palindrome
+           - Time Complexity: O(n - 1) = O(n)
+      - substring length = 2:
+           - For array[i][i+1] where i is from 0 to n - 2, the value will be set to true if input[i] == input[i+1], otherwise false
+           - Time Complexity: O(n - 2) = O(n)
+      - substring length > 2:
+           - For array[i][j] where (j - i) >= 2 and j < n, the value will be set to true if array[i+1][j-1] is true and input[i] == input[j], otherwise false
+           - The function will start to assign values for substring with length 3 to n
+           - Time Complexity: O((n - 2) + (n - 3) + ... + (n - (n - 2)) + (n - (n - 1))) = O((n - 2) + (n - 3) + ... + 2 + 1) = O(n(n - 1)/2) = O(n<sup>2</sup>)
+      - Every time a cell is set to true, it checks if the substring it represents is longer than the length of the longestPalindrome, if yes then the longestPalindrome will take the value of the substring
+
+Total Time Complexity: O(n) + O(n) + O(n<sup>2</sup>) = O(n<sup>2</sup>) where n is the length of the input
+         
 
 ## Level 3
+This component has a function longestPalindrome(input) which takes in an input and returns the longest palindromic substring of the input.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
