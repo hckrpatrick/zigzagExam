@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Zigzag Exam
+
+This project is deployed on [GitHub Pages](https://hckrpatrick.github.io/zigzagExam/) and has the following components:
+
+Level 1 - Checks if the input string is a palindrome
+Level 2 - Returns the longest palindromic substring of the input string
+Level 3 - Returns the minimum number of cuts needed to perform on the input string such
+that each remaining substring is a palindrome
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
