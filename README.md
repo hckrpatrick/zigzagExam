@@ -1,12 +1,32 @@
 # Zigzag Exam
 
-This project is deployed on [GitHub Pages](https://hckrpatrick.github.io/zigzagExam/) and has the following components:
+This project is deployed on [GitHub Pages](https://hckrpatrick.github.io/zigzagExam/) ([https://hckrpatrick.github.io/zigzagExam/](https://hckrpatrick.github.io/zigzagExam/)) and has the following components:
 
-Level 1 - Checks if the input string is a palindrome
-Level 2 - Returns the longest palindromic substring of the input string
-Level 3 - Returns the minimum number of cuts needed to perform on the input string such
+[Level 1](#level-1) - Checks if the input string is a palindrome\
+[Level 2](#level-2) - Returns the longest palindromic substring of the input string\
+[Level 3](#level-3) - Returns the minimum number of cuts needed to perform on the input string such
 that each remaining substring is a palindrome
 
+## Level 1
+This component has a function isPalindrom(input) which takes in an input and returns "True", if the input is a palindrome, otherwise "False".
+
+1. Initially the function creates a variable start and end with values 0 and length of the input minus 1, respectively.
+2. It will enter a loop and end until the following conditions are met:
+      - start is equal to end: return "True"
+      - start is greater than end: return "True"
+      - input[start] is not equal to input[end]: return "False"
+3. After each iteration on the loop, start will increment and end will decrement.
+
+Time Complexity: O(n) where n is the length of the input
+
+## Level 2
+This component has a function longestPalindrome(input) which takes in an input and returns the longest palindromic substring of the input.
+
+1. Initially the function creates a nxn array, where n is the length of the input string.
+      - The value of array[i][j] is true if the substring of the input string from index i to j is a palindrome, otherwise false
+2. sdas
+
+## Level 3
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
