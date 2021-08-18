@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Level1 from './components/Level1';
+import Level2 from './components/Level2';
+import Level3 from './components/Level3';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Level1></Level1>
+      <Level2></Level2>
+      <Level3></Level3>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Patrick Joseph</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
