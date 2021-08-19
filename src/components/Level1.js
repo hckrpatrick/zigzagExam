@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import LevelTemplate from './LevelTemplate';
 
 const isPalindrom = (input)=>{
     input = input.replaceAll(' ', '');
     let start = 0, end = input.length - 1;
-    if (end === -1) return ""; 
+    if (end === -1) return "Empty";
     while (start !== end && start < end){
         if(input[start] !== input[end])
             return "False";
@@ -15,16 +16,14 @@ const isPalindrom = (input)=>{
 
 function Level1() {
     const [input, setInput] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('Empty');
     const handleChange = (e)=>{
         setInput(e.target.value);
         setResult(isPalindrom(e.target.value));
     }
   return (
     <>
-        <h1>Level 1</h1>
-        <input type="text" value={input} onChange={handleChange}/>
-        <h2>{result}</h2>
+        <LevelTemplate input={input} result={result} level="1" handle={handleChange}></LevelTemplate>
     </>
   );
 }

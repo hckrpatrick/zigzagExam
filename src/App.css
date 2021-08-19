@@ -1,5 +1,25 @@
-.App {
+body{
+  
+  background-color: #282c34;
+}
+.Level {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  display: flex;
+  align-items: stretch;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.Result{
+  width: 25%;
+  padding: 10px;
+}
+
+.Input{
+  width: 25%;
 }
 
 .App-logo {

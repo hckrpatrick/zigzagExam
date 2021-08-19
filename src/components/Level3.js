@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import LevelTemplate from './LevelTemplate';
 
 const minPalindromeCuts = (str)=>{
     str = str.replaceAll(' ', '');
-    if (str.length === 0) return null;
+    if (str.length === 0) return "Empty";
     let palindromeMatrix = new Array(str.length);
 
     for (let i = 0; i < str.length; i++){
@@ -46,16 +47,14 @@ const minPalindromeCuts = (str)=>{
 
 function Level3() {
     const [input, setInput] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('Empty');
     const handleChange = (e)=>{
         setInput(e.target.value);
         setResult(minPalindromeCuts(e.target.value));
     }
   return (
     <>
-        <h1>Level 3</h1>
-        <input type="text" value={input} onChange={handleChange}/>
-        <h2>{result}</h2>
+        <LevelTemplate input={input} result={result} level="3" handle={handleChange}></LevelTemplate>
     </>
   );
 }

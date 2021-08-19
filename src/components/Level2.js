@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import LevelTemplate from './LevelTemplate';
 
 const longestPalindrome = (str)=>{
     str = str.replaceAll(' ', '');
-    if (str.length === 0) return "";
+    if (str.length === 0) return "Empty";
     let palindromeMatrix = new Array(str.length);
     let longStart = 0, longEnd = 0, maxLength = 1;
     for (let i = 0; i < str.length; i++){
@@ -40,16 +41,14 @@ const longestPalindrome = (str)=>{
 
 function Level2() {
     const [input, setInput] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('Empty');
     const handleChange = (e)=>{
         setInput(e.target.value);
         setResult(longestPalindrome(e.target.value));
     }
   return (
     <>
-        <h1>Level 2</h1>
-        <input type="text" value={input} onChange={handleChange}/>
-        <h2>{result}</h2>
+        <LevelTemplate input={input} result={result} level="2" handle={handleChange}></LevelTemplate>
     </>
   );
 }
