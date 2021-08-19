@@ -10,7 +10,7 @@ function LevelTemplate({input, result, handle, level}) {
         <div className="Level">
             <div className="Input">
                 <h1>Level {level}</h1>
-                <input type="text" value={input} onChange={handleChange}/>
+                <input className="inputBox" type="text" value={input} onChange={handleChange}/>
             </div>
             <div className="Result">
                 <h2>{result}</h2>
