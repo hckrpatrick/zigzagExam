@@ -1,6 +1,6 @@
 # Zigzag Exam
 
-This project is deployed on [GitHub Pages](https://hckrpatrick.github.io/zigzagExam/) ([https://hckrpatrick.github.io/zigzagExam/](https://hckrpatrick.github.io/zigzagExam/)) and has the following components:
+This project is deployed on [GitHub Pages](https://pages.github.com/) ([https://hckrpatrick.github.io/zigzagExam/](https://hckrpatrick.github.io/zigzagExam/)) and has the following components:
 
 [Level 1](#level-1) - Displays if the input string is a palindrome\
 [Level 2](#level-2) - Displays the longest palindromic substring of the input string\
@@ -67,7 +67,7 @@ Total Time Complexity: O(*n*<sup>2</sup>) + O(*n*<sup>2</sup>) = O(*n<sup>2</sup
 
 # React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is deployed in deployed on [GitHub Pages](https://pages.github.com/) ([https://hckrpatrick.github.io/zigzagExam/](https://hckrpatrick.github.io/zigzagExam/)) using [GitHub Actions](https://github.com/features/actions) triggered by [push event](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#push).
 
 ## Available Scripts
 
