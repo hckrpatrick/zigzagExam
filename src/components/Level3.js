@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const palindromeMatrix = (str)=>{
+const minPalindromeCuts = (str)=>{
     str = str.replaceAll(' ', '');
     if (str.length === 0) return null;
     let palindromeMatrix = new Array(str.length);
@@ -36,7 +36,7 @@ const palindromeMatrix = (str)=>{
             cuts[i] = str.length;
             for (let j = 0; j < i; j++) {
                 if (palindromeMatrix[j + 1][i] && cuts[j] + 1 < cuts[i])
-                    cuts[i] = 1 + cuts[j];
+                    cuts[i] = cuts[j] + 1;
             }
         }
     }
@@ -49,7 +49,7 @@ function Level3() {
     const [result, setResult] = useState('');
     const handleChange = (e)=>{
         setInput(e.target.value);
-        setResult(palindromeMatrix(e.target.value));
+        setResult(minPalindromeCuts(e.target.value));
     }
   return (
     <>
