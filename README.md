@@ -65,7 +65,7 @@ Let sub(a,b) be the substring of the input string from index a to b
 
 Total Time Complexity: O(*n*<sup>2</sup>) + O(*n*<sup>2</sup>) = O(*n<sup>2</sup>*)
 
-#React
+# React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
